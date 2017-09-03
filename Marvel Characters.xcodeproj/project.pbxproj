@@ -12,8 +12,17 @@
 		4402DE021F52C40C00CB5C48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4402DDFF1F52C40C00CB5C48 /* Main.storyboard */; };
 		4402DE071F52C69200CB5C48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4402DE061F52C69200CB5C48 /* AppDelegate.m */; };
 		4402DE5B1F52D35700CB5C48 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4402DE5A1F52D35700CB5C48 /* HomeViewController.m */; };
-		444A908D1F50BDFA00A24E1A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 444A908B1F50BDFA00A24E1A /* Info.plist */; };
+		4402DE5E1F52DECD00CB5C48 /* MarvelCharactersTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4402DE5D1F52DECD00CB5C48 /* MarvelCharactersTableCell.m */; };
+		4402DE661F52EFA200CB5C48 /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 4402DE651F52EFA200CB5C48 /* Character.m */; };
+		4402DE6A1F53053000CB5C48 /* MCNetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4402DE691F53053000CB5C48 /* MCNetworkService.m */; };
+		4402DE701F530C1500CB5C48 /* MCFileDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4402DE6F1F530C1500CB5C48 /* MCFileDataService.m */; };
 		444A908E1F50BDFA00A24E1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 444A908C1F50BDFA00A24E1A /* main.m */; };
+		4471B8961F560ABE00CF54E0 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4471B8951F560ABE00CF54E0 /* DetailsViewController.m */; };
+		44799BAD1F5C7326006BA948 /* MarvelApiCharacterImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 44799BAC1F5C7326006BA948 /* MarvelApiCharacterImageRequest.m */; };
+		448DE1E71F536FEA00773546 /* MarvelApiCharacterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 448DE1E61F536FEA00773546 /* MarvelApiCharacterRequest.m */; };
+		448DE1EA1F53731300773546 /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 448DE1E91F53731300773546 /* HttpRequest.m */; };
+		448DE1EE1F53895000773546 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 448DE1ED1F53895000773546 /* NSString+MD5.m */; };
+		44E316A51F549260006B2E2B /* MCCharactersService.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E316A41F549260006B2E2B /* MCCharactersService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,9 +33,33 @@
 		4402DE061F52C69200CB5C48 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4402DE591F52D35700CB5C48 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		4402DE5A1F52D35700CB5C48 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		4402DE5C1F52DECD00CB5C48 /* MarvelCharactersTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarvelCharactersTableCell.h; sourceTree = "<group>"; };
+		4402DE5D1F52DECD00CB5C48 /* MarvelCharactersTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarvelCharactersTableCell.m; sourceTree = "<group>"; };
+		4402DE641F52EFA200CB5C48 /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
+		4402DE651F52EFA200CB5C48 /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
+		4402DE681F53053000CB5C48 /* MCNetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCNetworkService.h; sourceTree = "<group>"; };
+		4402DE691F53053000CB5C48 /* MCNetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCNetworkService.m; sourceTree = "<group>"; };
+		4402DE6B1F5305A500CB5C48 /* MCNetworkServiceDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCNetworkServiceDelegate.h; sourceTree = "<group>"; };
+		4402DE6C1F530AA100CB5C48 /* MCDataServiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDataServiceDelegate.h; sourceTree = "<group>"; };
+		4402DE6D1F530ACE00CB5C48 /* MCDataService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCDataService.h; sourceTree = "<group>"; };
+		4402DE6E1F530C1500CB5C48 /* MCFileDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFileDataService.h; sourceTree = "<group>"; };
+		4402DE6F1F530C1500CB5C48 /* MCFileDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFileDataService.m; sourceTree = "<group>"; };
 		444A906B1F50B20600A24E1A /* Marvel Characters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marvel Characters.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		444A908B1F50BDFA00A24E1A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		444A908C1F50BDFA00A24E1A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4471B8941F560ABE00CF54E0 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		4471B8951F560ABE00CF54E0 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		44799BAB1F5C7326006BA948 /* MarvelApiCharacterImageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarvelApiCharacterImageRequest.h; sourceTree = "<group>"; };
+		44799BAC1F5C7326006BA948 /* MarvelApiCharacterImageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarvelApiCharacterImageRequest.m; sourceTree = "<group>"; };
+		448DE1E51F536FEA00773546 /* MarvelApiCharacterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarvelApiCharacterRequest.h; sourceTree = "<group>"; };
+		448DE1E61F536FEA00773546 /* MarvelApiCharacterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarvelApiCharacterRequest.m; sourceTree = "<group>"; };
+		448DE1E81F53731300773546 /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
+		448DE1E91F53731300773546 /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
+		448DE1EC1F53895000773546 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		448DE1ED1F53895000773546 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		44E316A31F549260006B2E2B /* MCCharactersService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCCharactersService.h; sourceTree = "<group>"; };
+		44E316A41F549260006B2E2B /* MCCharactersService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCCharactersService.m; sourceTree = "<group>"; };
+		44E316A61F54928D006B2E2B /* MCCharactersServiceDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCCharactersServiceDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +94,7 @@
 		4402DE041F52C65E00CB5C48 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				4471B8931F560AA700CF54E0 /* Details */,
 				4402DE581F52D07E00CB5C48 /* Home */,
 				4402DE051F52C69200CB5C48 /* AppDelegate.h */,
 				4402DE061F52C69200CB5C48 /* AppDelegate.m */,
@@ -73,8 +107,70 @@
 			children = (
 				4402DE591F52D35700CB5C48 /* HomeViewController.h */,
 				4402DE5A1F52D35700CB5C48 /* HomeViewController.m */,
+				4402DE5C1F52DECD00CB5C48 /* MarvelCharactersTableCell.h */,
+				4402DE5D1F52DECD00CB5C48 /* MarvelCharactersTableCell.m */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		4402DE5F1F52E32F00CB5C48 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				44E316A21F54916F006B2E2B /* CharactersService */,
+				4402DE601F52E34000CB5C48 /* DataService */,
+				4402DE611F52E35100CB5C48 /* NetworkService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4402DE601F52E34000CB5C48 /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+				4402DE6C1F530AA100CB5C48 /* MCDataServiceDelegate.h */,
+				4402DE6D1F530ACE00CB5C48 /* MCDataService.h */,
+				4402DE6E1F530C1500CB5C48 /* MCFileDataService.h */,
+				4402DE6F1F530C1500CB5C48 /* MCFileDataService.m */,
+			);
+			path = DataService;
+			sourceTree = "<group>";
+		};
+		4402DE611F52E35100CB5C48 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				4402DE681F53053000CB5C48 /* MCNetworkService.h */,
+				4402DE691F53053000CB5C48 /* MCNetworkService.m */,
+				4402DE6B1F5305A500CB5C48 /* MCNetworkServiceDelegate.h */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		4402DE621F52ED8C00CB5C48 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				448DE1EB1F53893500773546 /* Utils */,
+				4402DE631F52ED9A00CB5C48 /* DataEntities */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4402DE631F52ED9A00CB5C48 /* DataEntities */ = {
+			isa = PBXGroup;
+			children = (
+				4402DE641F52EFA200CB5C48 /* Character.h */,
+				4402DE651F52EFA200CB5C48 /* Character.m */,
+			);
+			path = DataEntities;
+			sourceTree = "<group>";
+		};
+		4402DE711F5314B700CB5C48 /* MarvelApi */ = {
+			isa = PBXGroup;
+			children = (
+				448DE1E51F536FEA00773546 /* MarvelApiCharacterRequest.h */,
+				448DE1E61F536FEA00773546 /* MarvelApiCharacterRequest.m */,
+				44799BAB1F5C7326006BA948 /* MarvelApiCharacterImageRequest.h */,
+				44799BAC1F5C7326006BA948 /* MarvelApiCharacterImageRequest.m */,
+			);
+			path = MarvelApi;
 			sourceTree = "<group>";
 		};
 		444A90621F50B20600A24E1A = {
@@ -96,8 +192,10 @@
 		444A906D1F50B20600A24E1A /* Marvel Characters */ = {
 			isa = PBXGroup;
 			children = (
-				4402DE041F52C65E00CB5C48 /* Modules */,
 				444A90871F50B6CA00A24E1A /* API */,
+				4402DE621F52ED8C00CB5C48 /* Common */,
+				4402DE041F52C65E00CB5C48 /* Modules */,
+				4402DE5F1F52E32F00CB5C48 /* Services */,
 				4402DDF21F52BF8300CB5C48 /* Resources */,
 				444A908A1F50BDBE00A24E1A /* Supporting Files */,
 			);
@@ -107,6 +205,9 @@
 		444A90871F50B6CA00A24E1A /* API */ = {
 			isa = PBXGroup;
 			children = (
+				4402DE711F5314B700CB5C48 /* MarvelApi */,
+				448DE1E81F53731300773546 /* HttpRequest.h */,
+				448DE1E91F53731300773546 /* HttpRequest.m */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -118,6 +219,34 @@
 				444A908C1F50BDFA00A24E1A /* main.m */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4471B8931F560AA700CF54E0 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				4471B8941F560ABE00CF54E0 /* DetailsViewController.h */,
+				4471B8951F560ABE00CF54E0 /* DetailsViewController.m */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		448DE1EB1F53893500773546 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				448DE1EC1F53895000773546 /* NSString+MD5.h */,
+				448DE1ED1F53895000773546 /* NSString+MD5.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		44E316A21F54916F006B2E2B /* CharactersService */ = {
+			isa = PBXGroup;
+			children = (
+				44E316A31F549260006B2E2B /* MCCharactersService.h */,
+				44E316A41F549260006B2E2B /* MCCharactersService.m */,
+				44E316A61F54928D006B2E2B /* MCCharactersServiceDelegate.h */,
+			);
+			path = CharactersService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +309,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4402DE011F52C40C00CB5C48 /* LaunchScreen.storyboard in Resources */,
-				444A908D1F50BDFA00A24E1A /* Info.plist in Resources */,
 				4402DDF41F52BFF800CB5C48 /* Assets.xcassets in Resources */,
 				4402DE021F52C40C00CB5C48 /* Main.storyboard in Resources */,
 			);
@@ -194,7 +322,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				444A908E1F50BDFA00A24E1A /* main.m in Sources */,
+				44799BAD1F5C7326006BA948 /* MarvelApiCharacterImageRequest.m in Sources */,
+				448DE1EA1F53731300773546 /* HttpRequest.m in Sources */,
+				4402DE701F530C1500CB5C48 /* MCFileDataService.m in Sources */,
+				4471B8961F560ABE00CF54E0 /* DetailsViewController.m in Sources */,
+				4402DE661F52EFA200CB5C48 /* Character.m in Sources */,
+				4402DE6A1F53053000CB5C48 /* MCNetworkService.m in Sources */,
+				448DE1EE1F53895000773546 /* NSString+MD5.m in Sources */,
+				4402DE5E1F52DECD00CB5C48 /* MarvelCharactersTableCell.m in Sources */,
+				448DE1E71F536FEA00773546 /* MarvelApiCharacterRequest.m in Sources */,
 				4402DE071F52C69200CB5C48 /* AppDelegate.m in Sources */,
+				44E316A51F549260006B2E2B /* MCCharactersService.m in Sources */,
 				4402DE5B1F52D35700CB5C48 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

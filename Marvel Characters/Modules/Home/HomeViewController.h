@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MCCharactersServiceDelegate.h"
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : UIViewController<MCCharactersServiceDelegate, UITableViewDelegate, UITableViewDataSource>
 
 @end
